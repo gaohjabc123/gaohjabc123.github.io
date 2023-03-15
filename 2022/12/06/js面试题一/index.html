@@ -1,0 +1,334 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>js面试题一 | web开发那些事</title><meta name="keywords" content="面试"><meta name="author" content="gaohj5"><meta name="copyright" content="gaohj5"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="ES6版本引入了哪些特性？ 123456let 和 const 关键字。箭头函数。多行字符串。解构赋值。增强的对象文字。Promises  var、const 和 let 的主要区别是什么？ 1234* 用 let 和 const 声明的变量是块范围的；用 var 声明的变量是全局范围的或函数范围的。* var 变量可以在其范围内更新和重新声明；让变量可以更新但不能重新声明；const 变量既不能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js面试题一">
+<meta property="og:url" content="https://gaohjabc123.github.io/2022/12/06/js%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/index.html">
+<meta property="og:site_name" content="web开发那些事">
+<meta property="og:description" content="ES6版本引入了哪些特性？ 123456let 和 const 关键字。箭头函数。多行字符串。解构赋值。增强的对象文字。Promises  var、const 和 let 的主要区别是什么？ 1234* 用 let 和 const 声明的变量是块范围的；用 var 声明的变量是全局范围的或函数范围的。* var 变量可以在其范围内更新和重新声明；让变量可以更新但不能重新声明；const 变量既不能">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370905.jpg">
+<meta property="article:published_time" content="2022-12-06T06:14:58.000Z">
+<meta property="article:modified_time" content="2022-12-06T07:47:20.584Z">
+<meta property="article:author" content="gaohj5">
+<meta property="article:tag" content="面试">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370905.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://gaohjabc123.github.io/2022/12/06/js%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://testingcf.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"2IR0UEK6II","apiKey":"0270de1be862b8a25e8a359ecbdd7ac4","indexName":"gaohj","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://testingcf.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://testingcf.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://testingcf.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://testingcf.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://testingcf.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-12-06 15:47:20'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/photo.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370905.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">web开发那些事</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">js面试题一</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-06T06:14:58.000Z" title="发表于 2022-12-06 14:14:58">2022-12-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-06T07:47:20.584Z" title="更新于 2022-12-06 15:47:20">2022-12-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/">随堂笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="js面试题一"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>ES6版本引入了哪些特性？</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 和 <span class="keyword">const</span> 关键字。</span><br><span class="line">箭头函数。</span><br><span class="line">多行字符串。</span><br><span class="line">解构赋值。</span><br><span class="line">增强的对象文字。</span><br><span class="line"><span class="title class_">Promises</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>var、const 和 let 的主要区别是什么？</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* 用 <span class="keyword">let</span> 和 <span class="keyword">const</span> 声明的变量是块范围的；用 <span class="keyword">var</span> 声明的变量是全局范围的或函数范围的。</span><br><span class="line">* <span class="keyword">var</span> 变量可以在其范围内更新和重新声明；让变量可以更新但不能重新声明；<span class="keyword">const</span> 变量既不能更新也不能重新声明。</span><br><span class="line">* <span class="keyword">var</span> 可以提升到其作用域的顶部。其中 <span class="keyword">var</span> 变量初始化为未定义，<span class="keyword">let</span> 和 <span class="keyword">const</span> 变量未初始化（临时死区，<span class="variable constant_">TDZ</span>）。</span><br><span class="line">* 虽然可以在不初始化的情况下声明 <span class="keyword">var</span> 和 <span class="keyword">let</span>，但必须在声明期间初始化 <span class="keyword">const</span>。</span><br></pre></td></tr></table></figure>
+
+<p><strong>什么是promise和async-await？</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Promises</span> 是一种在 <span class="title class_">JavaScript</span> 中启用异步编程的方法。一般来说，<span class="title class_">Promise</span> 意味着程序调用函数时期它返回调用程序可以在进一步计算中使用的结果。</span><br><span class="line"></span><br><span class="line"><span class="title class_">Async</span>-<span class="keyword">await</span> 也有助于异步编程。它是 promise 的语法糖。<span class="title class_">Async</span>-<span class="keyword">await</span> 语法简单，很容易在单个函数中维护大量异步调用。此外， <span class="keyword">async</span>-wait 可以防止回调地狱。</span><br></pre></td></tr></table></figure>
+
+<p><strong>什么是闭包？</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在 <span class="title class_">JavaScript</span> 函数中定义的函数称为闭包。它可以访问 <span class="number">3</span> 种类型的范围（内部、外部和全局），在外部函数的情况下，除了访问变量之外，它还可以查看参数。</span><br></pre></td></tr></table></figure>
+
+<p><strong>JavaScript如何保持并发？</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* 事件循环。 </span><br><span class="line">* 微和宏队列。</span><br><span class="line">* 回调。</span><br><span class="line">* 线程池和集群（多线程）。</span><br></pre></td></tr></table></figure>
+
+<p><strong>什么是回调，并提供一个简单的例子</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">回调函数是作为参数传递给另一个函数并在某些操作完成后执行的函数。</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">modifyArray</span>(<span class="params">arr, callback</span>) &#123;</span><br><span class="line">  <span class="comment">// do something to arr here</span></span><br><span class="line">  arr.<span class="title function_">push</span>(<span class="number">100</span>);</span><br><span class="line">  <span class="comment">// then execute the callback function that was passed</span></span><br><span class="line">  <span class="title function_">callback</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="title function_">modifyArray</span>(arr, <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;array has been modified&quot;</span>, arr);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>声明一个函数有几种方式，有什么不同</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">函数声明由 <span class="keyword">function</span> 关键字组成，后跟一个强制性的函数名称，一对括号中的参数列表。</span><br><span class="line"></span><br><span class="line">可以在对象字面量和 <span class="title class_">ES2015</span> 类的方法声明中使用速记方法定义。</span><br><span class="line"></span><br><span class="line">使用包含参数列表的一对括号定义箭头函数。后面是一个粗箭头 =&gt; 和一对分隔正文语句的花括号。</span><br><span class="line"></span><br><span class="line">在函数表达式中，您将函数分配给变量。</span><br><span class="line"></span><br><span class="line">可以使用 <span class="title class_">Function</span> 构造函数动态创建函数，但存在安全和性能问题，不建议使用。</span><br></pre></td></tr></table></figure>
+
+<p><strong>什么是匿名函数？</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">它是一个没有名字的函数，它们是在运行时使用函数运算符动态声明的，因为它提供了比声明符更大的灵活性</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> display=<span class="keyword">function</span>(<span class="params"></span>)&#123;  </span><br><span class="line"> <span class="title function_">alert</span>(<span class="string">&quot;Anonymous Function is declared&quot;</span>);  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="title function_">display</span>();</span><br></pre></td></tr></table></figure>
+
+<p><strong>如何从特定索引返回字符？</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">charAt</span>() 方法可用于找出任何特定索引处的字符值，考虑到“n”是字符串的长度，索引可以从 <span class="number">0</span> 开始，到“n-<span class="number">1</span>”结束。然而，索引的值不能为负数，不能等于或大于字符串的长度。</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;LambdaTest&quot;</span>;    </span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">writeln</span>(str.<span class="title function_">charAt</span>(<span class="number">4</span>));</span><br></pre></td></tr></table></figure>
+
+<p><strong>什么是原型属性？</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">原型属性通常用于实现继承。每个函数都有一个，默认值为空。方法和属性被添加到原型中以使其可用于实例。</span><br><span class="line"></span><br><span class="line"><span class="comment">//计算矩形周长</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">Rectangle</span>(<span class="params">x, y</span>) &#123;</span><br><span class="line"><span class="variable language_">this</span>.<span class="property">x</span> = x;</span><br><span class="line"><span class="variable language_">this</span>.<span class="property">y</span> = y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Rectangle</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">perimeter</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line"><span class="keyword">return</span> <span class="number">2</span> * (<span class="variable language_">this</span>.<span class="property">x</span> + <span class="variable language_">this</span>.<span class="property">y</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> rectangle = <span class="keyword">new</span> <span class="title class_">Rectangle</span>(<span class="number">4</span>, <span class="number">3</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(rectangle.<span class="title function_">perimeter</span>()); <span class="comment">// outputs &#x27;14&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>异步编程及其重要性</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable constant_">JS</span> 引擎在事件循环中运行。当遇到阻塞操作时，会触发请求并且代码会不断运行。一旦响应准备好，就会触发中断。执行事件处理程序，而控制流继续。因此，通过异步编程，单个线程可以同时处理多个操作。</span><br></pre></td></tr></table></figure>
+
+<p><strong>客户端 JavaScript 与服务器端有何不同</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">客户端 <span class="title class_">JavaScript</span> 通常由基本语言以及与在浏览器中运行的脚本相关的某些预定义对象组成。由 <span class="variable constant_">HTML</span> 直接嵌入，在运行时由浏览器执行。</span><br><span class="line"></span><br><span class="line">服务器端 <span class="variable constant_">JS</span> 几乎类似于客户端。但是，它是在服务器中执行的，并且只有在代码编译完成后才能部署。</span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">gaohj5</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://gaohjabc123.github.io/2022/12/06/js%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/">https://gaohjabc123.github.io/2022/12/06/js%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://gaohjabc123.github.io" target="_blank">web开发那些事</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%9D%A2%E8%AF%95/">面试</a></div><div class="post_share"><div class="social-share" data-image="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370905.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://testingcf.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/12/06/%E4%B8%80%E4%B8%AA%E4%B8%8D%E9%94%99%E7%9A%84%E7%BD%91%E7%AB%99/"><img class="prev-cover" src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370908.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">一个不错的网站</div></div></a></div><div class="next-post pull-right"><a href="/2022/12/02/easycode/"><img class="next-cover" src="https://bu.dusays.com/2022/06/05/629c5257753d1.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">easycode</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Twikoo</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/photo.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">gaohj5</div><div class="author-info__description">前端培训界的扛把子</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/gaohj" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:gaohj3@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/03/15/%E7%AC%94%E8%AE%B0/" title="js面试题"><img src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370909.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="js面试题"/></a><div class="content"><a class="title" href="/2023/03/15/%E7%AC%94%E8%AE%B0/" title="js面试题">js面试题</a><time datetime="2023-03-15T03:58:38.000Z" title="发表于 2023-03-15 11:58:38">2023-03-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/06/%E4%B8%80%E4%B8%AA%E4%B8%8D%E9%94%99%E7%9A%84%E7%BD%91%E7%AB%99/" title="一个不错的网站"><img src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370908.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一个不错的网站"/></a><div class="content"><a class="title" href="/2022/12/06/%E4%B8%80%E4%B8%AA%E4%B8%8D%E9%94%99%E7%9A%84%E7%BD%91%E7%AB%99/" title="一个不错的网站">一个不错的网站</a><time datetime="2022-12-06T07:50:48.000Z" title="发表于 2022-12-06 15:50:48">2022-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/06/js%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/" title="js面试题一"><img src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370905.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="js面试题一"/></a><div class="content"><a class="title" href="/2022/12/06/js%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/" title="js面试题一">js面试题一</a><time datetime="2022-12-06T06:14:58.000Z" title="发表于 2022-12-06 14:14:58">2022-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/02/easycode/" title="easycode"><img src="https://bu.dusays.com/2022/06/05/629c5257753d1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="easycode"/></a><div class="content"><a class="title" href="/2022/12/02/easycode/" title="easycode">easycode</a><time datetime="2022-12-02T06:09:56.000Z" title="发表于 2022-12-02 14:09:56">2022-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/23/javascript%E5%8F%91%E5%B1%95%E5%8F%B2/" title="javascript发展史"><img src="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="javascript发展史"/></a><div class="content"><a class="title" href="/2022/11/23/javascript%E5%8F%91%E5%B1%95%E5%8F%B2/" title="javascript发展史">javascript发展史</a><time datetime="2022-11-23T02:02:21.000Z" title="发表于 2022-11-23 10:02:21">2022-11-23</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By gaohj5</div><div class="framework-info"><span>框架 </span><a href="https://gaohjabc123.github.io">never give up</a><span class="footer-separator">|</span><span>主题 </span><a href="https://gaohjabc123.github.io">come on!</a></div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.<p><a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'uKtDELt8Q3pMh1i1ZtGucYEj-9Nh9j0Va',
+      appKey: 'J91z8dzWqOMXS2eQ9W1zzE2X',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://testingcf.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.tzy1997.com/',
+      region: ''
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.tzy1997.com/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://testingcf.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Valine' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://testingcf.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>javascript发展史 | web开发那些事</title><meta name="keywords" content="JavaScript"><meta name="author" content="gaohj5"><meta name="copyright" content="gaohj5"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="JavaScript的发展历史 JavaScript的发展历史 JavaScript与Java的关系 JavaScript的版本     JavaScript的发展历史JavaScript的诞生JavaScript因为互联网而生，紧随着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络—">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript发展史">
+<meta property="og:url" content="https://gaohjabc123.github.io/2022/11/23/javascript%E5%8F%91%E5%B1%95%E5%8F%B2/index.html">
+<meta property="og:site_name" content="web开发那些事">
+<meta property="og:description" content="JavaScript的发展历史 JavaScript的发展历史 JavaScript与Java的关系 JavaScript的版本     JavaScript的发展历史JavaScript的诞生JavaScript因为互联网而生，紧随着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络—">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg">
+<meta property="article:published_time" content="2022-11-23T02:02:21.000Z">
+<meta property="article:modified_time" content="2022-11-30T11:39:41.542Z">
+<meta property="article:author" content="gaohj5">
+<meta property="article:tag" content="JavaScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://gaohjabc123.github.io/2022/11/23/javascript%E5%8F%91%E5%B1%95%E5%8F%B2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css" media="print" onload="this.media='all'"><script src="https://testingcf.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"2IR0UEK6II","apiKey":"0270de1be862b8a25e8a359ecbdd7ac4","indexName":"gaohj","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://testingcf.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://testingcf.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://testingcf.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://testingcf.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://testingcf.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-30 19:39:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/photo.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">web开发那些事</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">javascript发展史</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-23T02:02:21.000Z" title="发表于 2022-11-23 10:02:21">2022-11-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-30T11:39:41.542Z" title="更新于 2022-11-30 19:39:41">2022-11-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%9A%8F%E5%A0%82%E7%AC%94%E8%AE%B0/">随堂笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="javascript发展史"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="JavaScript的发展历史"><a href="#JavaScript的发展历史" class="headerlink" title="JavaScript的发展历史"></a>JavaScript的发展历史</h1><ul>
+<li><a href="#one">JavaScript的发展历史</a><ul>
+<li><a href="#two">JavaScript与Java的关系</a></li>
+<li><a href="#three">JavaScript的版本</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="JavaScript的发展历史-1"><a href="#JavaScript的发展历史-1" class="headerlink" title="JavaScript的发展历史"></a><a name="one">JavaScript的发展历史</a></h1><h3 id="JavaScript的诞生"><a href="#JavaScript的诞生" class="headerlink" title="JavaScript的诞生"></a>JavaScript的诞生</h3><p>JavaScript因为互联网而生，紧随着浏览器的出现而问世。回顾它的历史，就要从浏览器的历史讲起。</p>
+<p><strong>1990</strong>年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络——互联网的基础上，发明了<strong>万维网（World Wide Web）</strong>，从此可以在网上浏览网页文件。最早的网页只能在操作系统的终端里浏览，也就是说只能使用命令行操作，网页都是在字符窗口中显示，这当然非常不方便。</p>
+<p>1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。这是人类历史上第一个浏览器，从此网页可以在图形界面的窗口浏览。</p>
+<p>1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。</p>
+<p>1994年12月，Navigator发布了1.0版，市场份额一举超过90%。</p>
+<p>Netscape公司很快发现，Navigator浏览器需要一种可以嵌入网页的脚本语言，用来控制浏览器行为。当时，网速很慢而且上网费很贵，有些操作不宜在服务器端完成。比如，如果用户忘记填写“用户名”，就点了“发送”按钮，到服务器再发现这一点就有点太晚了，最好能在用户发出数据之前，就告诉用户“请填写用户名”。这就需要在网页中嵌入小程序，让浏览器检查每一栏是否都填写了。</p>
+<p>管理层对这种浏览器脚本语言的设想是：功能不需要太强，语法较为简单，容易学习和部署。那一年，正逢Sun公司的Java语言问世，市场推广活动非常成功。Netscape公司决定与Sun公司合作，浏览器支持嵌入Java小程序（后来称为Java applet）。但是，浏览器脚本语言是否就选用Java，则存在争论。后来，还是决定不使用Java，因为网页小程序不需要Java这么“重”的语法。但是，同时也决定脚本语言的语法要接近Java，并且可以支持Java程序。这些设想直接排除了使用现存语言，比如Perl、Python和TCL。<br><img src="jsauthor.png" alt="img"></p>
+<p>1995年，Netscape公司雇佣了程序员<strong>Brendan Eich</strong>开发这种网页脚本语言。Brendan Eich有很强的函数式编程背景，希望以Scheme语言（函数式语言鼻祖LISP语言的一种方言）为蓝本，实现这种新语言。</p>
+<p>1995年5月，Brendan Eich只用了10天，就设计完成了这种语言的第一版。它是一个大杂烩，语法有多个来源：</p>
+<ul>
+<li>基本语法：借鉴C语言和Java语言。</li>
+<li>数据结构：借鉴Java语言，包括将值分成原始值和对象两大类。</li>
+<li>函数的用法：借鉴Scheme语言和Awk语言，将函数当作第一等公民，并引入闭包。</li>
+<li>原型继承模型：借鉴Self语言（Smalltalk的一种变种）。</li>
+<li>正则表达式：借鉴Perl语言。</li>
+<li>字符串和数组处理：借鉴Python语言。</li>
+</ul>
+<p>为了保持简单，这种脚本语言缺少一些关键的功能，比如块级作用域、模块、子类型（subtyping）等等，但是可以利用现有功能找出解决办法。这种功能的不足，直接导致了后来JavaScript的一个显著特点：对于其他语言，你需要学习语言的各种功能，而对于JavaScript，你常常需要学习各种解决问题的模式。而且由于来源多样，从一开始就注定，JavaScript的编程风格是函数式编程和面向对象编程的一种混合体。</p>
+<p>Netscape公司的这种浏览器脚本语言，最初名字叫做Mocha，1995年9月改为LiveScript。12月，Netscape公司与Sun公司（Java语言的发明者和所有者）达成协议，后者允许将这种语言叫做JavaScript。这样一来，Netscape公司可以借助Java语言的声势，而Sun公司则将自己的影响力扩展到了浏览器。</p>
+<p>之所以起这个名字，并不是因为JavaScript本身与Java语言有多么深的关系（事实上，两者关系并不深），而是因为Netscape公司已经决定，使用Java语言开发网络应用程序，JavaScript可以像胶水一样，将各个部分连接起来。当然，后来的历史是Java语言的浏览器插件失败了，JavaScript反而发扬光大。</p>
+<p>1995年12月4日，Netscape公司与Sun公司联合发布了JavaScript语言。</p>
+<p>1996年3月，Navigator 2.0浏览器正式内置了JavaScript脚本语言。</p>
+<h3 id="JavaScript与Java的关系"><a href="#JavaScript与Java的关系" class="headerlink" title="JavaScript与Java的关系"></a><a name="two">JavaScript与Java的关系</a></h3><p>JavaScript和Java是两种不一样的语言，但是它们之间存在联系。</p>
+<p>JavaScript语法要比Java自由得多。</p>
+<p>Java语言需要编译，而JavaScript语言则是运行时由解释器直接执行。</p>
+<p>总之，JavaScript的原始设计目标是一种小型的、简单的动态语言，与Java有足够的相似性，使得使用者（尤其是Java程序员）可以快速上手。</p>
+<h3 id><a href="#" class="headerlink" title></a></h3><h3 id="JavaScript和ECMAScript的关系"><a href="#JavaScript和ECMAScript的关系" class="headerlink" title="JavaScript和ECMAScript的关系"></a><a name="six">JavaScript和ECMAScript的关系</a></h3><p>ECMAScript是一种由Ecma国际前身为欧洲计算机制造商协会,英文名称是European Computer Manufacturers Association，制定的标准。</p>
+<p>简单来说ECMAScript不是一门语言，而是一个标准。符合这个标准的比较常见的有：JavaScript、Action Script（Flash中用的语言）。就是说，你JavaScript学完了，Flash中的程序也会写了。</p>
+<p>ECMAScript在2015年6月，发布了ECMAScript 6版本，语言的能力更强。但是，浏览器的厂商不能那么快的去追上这个标准。</p>
+<p>ECMAScript主要描述了以下内容：</p>
+<ul>
+<li>语法</li>
+<li>变量和数据类型</li>
+<li>关键字、保留字</li>
+<li>运算符</li>
+<li>逻辑控制语句</li>
+<li>对象</li>
+</ul>
+<blockquote>
+<p>九六年，也就是说发明之后的下一年，js就逐渐的开始普及开，逐渐很多人开始使用它，所以这个时候呢，除了我们亲爱的作者以外，到了九六年就又出来了一个跟咱们现在有莫大关系的玩意，叫做ECMA，它的全名叫做欧洲计算机制造商协会，这个无所谓，他现在早就已经是一个全球化组织了，他已经不是欧洲那边的了，不过它这个名字还是叫原来那个东西，这咱不管，然后呢，这个ECMA组织呢，他就觉得，JS这个语言很靠谱嘛，咱们一起来把它做强做大，好的没问题，然后呢，同年ECMA这个组织就跟那个JS的作者一起起草了一个标准，这个标准呢，叫做ECMA script，也就是咱现在通常所说的标准，其实它就是一个简称，<strong>说白了就是这个标准它就定义了javascript的语法</strong>，，当然这个标准它也不是一成不变的，九六年那会儿叫做ES1，而到了咱们现在，咱就不去看太多历史的东西，拉到了咱们眼前，到了2020年，目前最新的是e CMA script，我给他写全了，E CMA script2019，或者被称之为S10，因为这个是他总共迭代的第十个版本，当然这S标准它有一个特点，就是说早年间的时候它迭代特别的懒，你比方说像99年那会儿之后长达十年都没怎么更新，这十个版本基本都是这两年更新过来的</p>
+</blockquote>
+<p><a name="three">JavaScript的版本</a></p>
+<p>1997年7月，ECMAScript 1.0发布。</p>
+<p>1998年6月，ECMAScript 2.0版发布。</p>
+<p>1999年12月，ECMAScript 3.0版发布，成为JavaScript的通行标准，得到了广泛支持。</p>
+<p>2007年10月，ECMAScript 4.0版草案发布，对3.0版做了大幅升级，预计次年8月发布正式版本。草案发布后，由于4.0版的目标过于激进，各方对于是否通过这个标准，发生了严重分歧。以Yahoo、Microsoft、Google为首的大公司，反对JavaScript的大幅升级，主张小幅改动；以JavaScript创造者Brendan Eich为首的Mozilla公司，则坚持当前的草案。</p>
+<p>2008年7月，由于对于下一个版本应该包括哪些功能，各方分歧太大，争论过于激进，ECMA开会决定，中止ECMAScript 4.0的开发（即废除了这个版本），将其中涉及现有功能改善的一小部分，发布为ECMAScript 3.1，而将其他激进的设想扩大范围，放入以后的版本，由于会议的气氛，该版本的项目代号起名为Harmony（和谐）。会后不久，ECMAScript 3.1就改名为ECMAScript 5。</p>
+<p>2009年12月，ECMAScript 5.0版正式发布。Harmony项目则一分为二，一些较为可行的设想定名为JavaScript.next继续开发，后来演变成ECMAScript 6；一些不是很成熟的设想，则被视为JavaScript.next.next，在更远的将来再考虑推出。TC39的总体考虑是，ECMAScript 5与ECMAScript 3基本保持兼容，较大的语法修正和新功能加入，将由JavaScript.next完成。当时，JavaScript.next指的是ECMAScript 6。第六版发布以后，将指ECMAScript 7。TC39预计，ECMAScript 5会在2013年的年中成为JavaScript开发的主流标准，并在此后五年中一直保持这个位置。</p>
+<p>2011年6月，ECMAscript 5.1版发布，并且成为ISO国际标准（ISO&#x2F;IEC 16262:2011）。到了2012年底，所有主要浏览器都支持ECMAScript 5.1版的全部功能。</p>
+<p>2013年3月，ECMAScript 6草案冻结，不再添加新功能。新的功能设想将被放到ECMAScript 7。</p>
+<p>2013年12月，ECMAScript 6草案发布。然后是12个月的讨论期，听取各方反馈。</p>
+<p>2015年6月，ECMAScript 6正式发布，并且更名为“ECMAScript 2015”。这是因为TC39委员会计划，以后每年发布一个ECMAScirpt的版本，下一个版本在2016年发布，称为“ECMAScript 2016”。</p>
+<p>除了ECMAScript的版本，很长一段时间中，Netscape公司（以及继承它的Mozilla基金会）在内部依然使用自己的版本号。这导致了JavaScript有自己不同于ECMAScript的版本号。1996年3月，Navigator 2.0内置了JavaScript 1.0。JavaScript 1.1版对应ECMAScript 1.0，但是直到JavaScript 1.4版才完全兼容ECMAScript 1.0。JavaScript 1.5版完全兼容ECMAScript 3.0。目前的JavaScript 1.8版完全兼容ECMAScript 5。</p>
+<table>
+<thead>
+<tr>
+<th>2016年6月</th>
+<th>ES7 发布，又名“ECMAScript 2016”</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2017年6月</td>
+<td>ES8 发布，又名“ECMAScript 2017”</td>
+<td></td>
+</tr>
+<tr>
+<td>2018年6月</td>
+<td>ES9 发布，又名“ECMAScript 2018”</td>
+<td></td>
+</tr>
+<tr>
+<td>2019年6月</td>
+<td>ES10 发布，又名“ECMAScript 2019”</td>
+<td></td>
+</tr>
+</tbody></table>
+<p><strong>规范地址：</strong></p>
+<p>ES6：<a target="_blank" rel="noopener" href="http://www.ecma-international.org/ecma-262/6.0/">http://www.ecma-international.org/ecma-262/6.0/</a><br>ES7：<a target="_blank" rel="noopener" href="http://www.ecma-international.org/ecma-262/7.0/">http://www.ecma-international.org/ecma-262/7.0/</a><br>ES8：<a target="_blank" rel="noopener" href="http://www.ecma-international.org/ecma-262/8.0/">http://www.ecma-international.org/ecma-262/8.0/</a><br>ES9：<a target="_blank" rel="noopener" href="http://www.ecma-international.org/ecma-262/9.0/">http://www.ecma-international.org/ecma-262/9.0/</a><br>ES10：<a target="_blank" rel="noopener" href="http://www.ecma-international.org/ecma-262/10.0/">http://www.ecma-international.org/ecma-262/10.0/</a></p>
+<p><strong>有关项目地址：</strong></p>
+<p>ECMA TC39 ：https:&#x2F;&#x2F;<a target="_blank" rel="noopener" href="https://www.adminjie.com/tags-12790.html">git</a>hub.com&#x2F;tc39<br>ECMA 262：<a target="_blank" rel="noopener" href="https://github.com/tc39/ecma262">https://github.com/tc39/ecma262</a><br>proposals ：<a target="_blank" rel="noopener" href="https://github.com/tc39/proposals">https://github.com/tc39/proposals</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">gaohj5</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://gaohjabc123.github.io/2022/11/23/javascript%E5%8F%91%E5%B1%95%E5%8F%B2/">https://gaohjabc123.github.io/2022/11/23/javascript%E5%8F%91%E5%B1%95%E5%8F%B2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://gaohjabc123.github.io" target="_blank">web开发那些事</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JavaScript/">JavaScript</a></div><div class="post_share"><div class="social-share" data-image="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://testingcf.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/12/02/easycode/"><img class="prev-cover" src="https://bu.dusays.com/2022/06/05/629c5257753d1.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">easycode</div></div></a></div><div class="next-post pull-right"><a href="/2022/11/22/JavaScript%E7%AE%80%E4%BB%8B/"><img class="next-cover" src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370906.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">JavaScript简介</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/03/15/笔记/" title="js面试题"><img class="cover" src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370909.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-03-15</div><div class="title">js面试题</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Valine</span><span class="switch-btn"></span><span class="second-comment">Twikoo</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/photo.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">gaohj5</div><div class="author-info__description">前端培训界的扛把子</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/gaohj" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:gaohj3@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="toc-number">1.</span> <span class="toc-text">JavaScript的发展历史</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JavaScript%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2-1"><span class="toc-number">2.</span> <span class="toc-text">JavaScript的发展历史</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript%E7%9A%84%E8%AF%9E%E7%94%9F"><span class="toc-number">2.0.1.</span> <span class="toc-text">JavaScript的诞生</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript%E4%B8%8EJava%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">2.0.2.</span> <span class="toc-text">JavaScript与Java的关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">2.0.3.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JavaScript%E5%92%8CECMAScript%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">2.0.4.</span> <span class="toc-text">JavaScript和ECMAScript的关系</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/03/15/%E7%AC%94%E8%AE%B0/" title="js面试题"><img src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370909.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="js面试题"/></a><div class="content"><a class="title" href="/2023/03/15/%E7%AC%94%E8%AE%B0/" title="js面试题">js面试题</a><time datetime="2023-03-15T03:58:38.000Z" title="发表于 2023-03-15 11:58:38">2023-03-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/06/%E4%B8%80%E4%B8%AA%E4%B8%8D%E9%94%99%E7%9A%84%E7%BD%91%E7%AB%99/" title="一个不错的网站"><img src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370908.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一个不错的网站"/></a><div class="content"><a class="title" href="/2022/12/06/%E4%B8%80%E4%B8%AA%E4%B8%8D%E9%94%99%E7%9A%84%E7%BD%91%E7%AB%99/" title="一个不错的网站">一个不错的网站</a><time datetime="2022-12-06T07:50:48.000Z" title="发表于 2022-12-06 15:50:48">2022-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/06/js%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/" title="js面试题一"><img src="https://photo-static-api.fotomore.com/creative/vcg/veer/612/veer-314370905.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="js面试题一"/></a><div class="content"><a class="title" href="/2022/12/06/js%E9%9D%A2%E8%AF%95%E9%A2%98%E4%B8%80/" title="js面试题一">js面试题一</a><time datetime="2022-12-06T06:14:58.000Z" title="发表于 2022-12-06 14:14:58">2022-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/02/easycode/" title="easycode"><img src="https://bu.dusays.com/2022/06/05/629c5257753d1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="easycode"/></a><div class="content"><a class="title" href="/2022/12/02/easycode/" title="easycode">easycode</a><time datetime="2022-12-02T06:09:56.000Z" title="发表于 2022-12-02 14:09:56">2022-12-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/23/javascript%E5%8F%91%E5%B1%95%E5%8F%B2/" title="javascript发展史"><img src="http://up.36992.com/pic/e6/c5/51/e6c551e768092c8655292d89a4034a74.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="javascript发展史"/></a><div class="content"><a class="title" href="/2022/11/23/javascript%E5%8F%91%E5%B1%95%E5%8F%B2/" title="javascript发展史">javascript发展史</a><time datetime="2022-11-23T02:02:21.000Z" title="发表于 2022-11-23 10:02:21">2022-11-23</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By gaohj5</div><div class="framework-info"><span>框架 </span><a href="https://gaohjabc123.github.io">never give up</a><span class="footer-separator">|</span><span>主题 </span><a href="https://gaohjabc123.github.io">come on!</a></div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.<p><a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'uKtDELt8Q3pMh1i1ZtGucYEj-9Nh9j0Va',
+      appKey: 'J91z8dzWqOMXS2eQ9W1zzE2X',
+      placeholder: 'Please leave your footprints',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'en',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://testingcf.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.tzy1997.com/',
+      region: ''
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.tzy1997.com/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://testingcf.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Valine' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://testingcf.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+
+document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
